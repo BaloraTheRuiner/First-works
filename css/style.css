@@ -1,0 +1,2359 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: #efefef!important;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif!important;
+}
+
+/*		GLOBAL      */
+
+.fs-lightbox-close {
+	display: none!important;
+}
+
+.btn-danger {
+	border-color: #1f8a52!important;
+}
+
+.card {
+	color: #126539e3;
+}
+
+.wrap_div {
+	position: relative;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 1100px;
+	height: 60px;
+	margin-bottom: 30px;
+}
+
+.wrap_diamond {
+	position: absolute;
+	left: -20px;
+	bottom: 8px;
+	width: 40px;
+	height: 40px;
+	transform: rotate(45deg);
+	border: 2px solid #1f8a52;
+	padding: 5px 0 0 7px;
+	margin-right: 0px!important;	
+}
+
+.wrap_diamond_icon {
+	transform: rotate(-45deg);
+	width: 25px;
+	height: 25px;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.wrap_line {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	/*height: 40px;*/
+	font-size: 21px;
+	padding-left: 54px;
+	color: #1f8a52;
+	border-bottom: 2px solid #1f8a52;
+	text-transform: capitalize;
+}
+
+/*		HEADER		*/
+
+.header {
+	width: 100%;
+	height: 200px;
+}
+
+.inner_header {
+	width: 100%;
+	height: 40px;
+	background: #1f8a52;
+	line-height: 3;
+}
+
+.lang_block {
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 1100px;
+	height: 40px;
+}
+.header_tel{
+	float: left;
+}
+.header_tel ul {
+	display: inline-block;
+}
+.header_tel li a img {
+	width: 20px;
+	margin-bottom: 6px;
+}
+.header_tel li p {
+	color: white;
+}
+
+.header_lang {
+	float: right;
+}
+
+.lang_block ul li a {
+	color: white;
+}
+
+.inner_header li {
+	display: inline-block;
+	float: right;
+	margin-left: 23px;
+}
+
+.inner_header a {
+	color: black;
+}
+
+.logo_and_menu {
+	position: relative;
+	margin: 0 auto;
+	box-sizing: border-box;
+	width: 1100px;
+	height: 125px;
+}
+
+.logo {
+	position: absolute;
+	top: 3px;
+	left: 0px;
+	width: 120px;
+	height: 120px;
+	background-image: url("../images/logo1.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+}
+
+.search {
+	right: 0;
+    position: relative;
+    margin: 3px;
+}
+
+.search_icon {
+	position: absolute;
+    top: 10px;
+    right: -164px;
+    width: 20px;
+    height: 20px;
+}
+
+.search_user {
+	position: absolute;
+    z-index: 111;
+    background: white;
+    width: 291px;
+    border-radius: 4px;
+	border: 1px solid #1f8a52;
+}
+
+.search_user > h5 {
+    border-radius: 4px;
+	padding: 8px 5px 8px 10px;
+}
+
+.search_input {
+	width: 291px;
+}
+
+.photo_is_search {
+	width: 45px;
+	height: 45px;
+	border-radius: 3px;
+	border: 1px solid #1f8a52;
+	margin-right: 10px;
+}
+
+.search_p {
+	position: relative;
+	display: flex;
+	border: 1px solid #1f8a52;
+	margin: 10px;
+}
+
+.user_name {
+	cursor: pointer;	
+	line-height: 3;
+	color: #126539e3;
+}
+
+.more_info {
+	height: 34px;
+	border: 1px solid #1f8a52;
+    top: 14px;
+    right: -8px;
+    position: absolute;
+}
+
+
+/*			MENU 			*/
+
+
+.menu_text {
+	text-transform: uppercase;
+	font-size: 14px;
+	color: #1f8a52;
+}
+
+.menu_text_a {
+	background-color: #efefef!important;
+	line-height: 35px!important;
+	padding: 20px 10px 0px 10px!important;
+	overflow: hidden;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-moz-osx-font-smoothing: grayscale;
+	position: relative;
+	-webkit-transition: color 300ms;
+	transition: color 300ms;
+	-webkit-transform: translateZ(0);
+	transform: translateZ(0);
+	cursor: pointer;
+}
+
+.menu_text_a:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #1f8a52;
+    border-radius: 100%;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition: 300ms ease-out;
+    transition: 300ms ease-out;
+}
+
+a:focus, a:hover {
+	text-decoration: none!important;
+}
+
+.menu_text_a:hover > p {
+	color: #373f9b!important;
+}
+
+.a_1:hover > .menu_text_icon {
+	content: url("../images/icons/Glxavor2.png");
+}
+.a_2:hover > .menu_text_icon {
+	content: url("../images/icons/mer masin2.png");
+}
+.a_3:hover > .menu_text_icon {
+	content: url("../images/icons/carayutyun2.png");
+}
+.a_4:hover > .menu_text_icon {
+	content: url("../images/icons/turizm2.png");
+}
+.a_5:hover > .menu_text_icon {
+	content: url("../images/icons/bjishkner2.png");
+}
+.a_6:hover > .menu_text_icon {
+	content: url("../images/icons/ardzaganq2.png");
+}
+.a_7:hover > .menu_text_icon {
+	content: url("../images/icons/faq2.png");
+}
+.a_8:hover > .menu_text_icon {
+	content: url("../images/icons/hetadarz kap2.png");
+}
+
+
+.menu_text_a:hover:before {
+    -webkit-transform: scale(2);
+    transform: scale(2);
+}
+
+.menu_text_icon, .menu_text_icon_2 {
+	width: 32px;
+	height: 32px;
+}
+
+.dropdown {
+	position: static!important;
+}
+
+/*			 DROPDOWN MENU 			*/
+
+.dpmenu_1 {
+	position: absolute!important;
+	left: -523px;
+	width: 1200px!important;
+	text-align: center!important;
+	padding: 0px!important;
+	box-shadow: 1px 1px	10px 1px #1f8a52!important;
+}
+
+.dropdown_menu_li {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	height: 100%;
+	padding: 15px 15px;
+	background: #ebecec;
+}
+
+.dropdown_menu_div, .dropwdown_menu_a {
+	width: 33.3%;
+	position: relative;
+	margin-bottom: 20px;
+}
+
+.dropdown_menu_img {
+	float: left;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	border: 1px solid #1f8a52;
+	transition: 1s;
+}
+
+.res_dropdown_menu_img {
+	width: 25px;
+}
+.res_bdr {
+	border-radius: 50%;
+	border: 1px solid #1f8a52;
+
+}
+.dis_flex {
+	display: flex!important;
+	flex-wrap: wrap;
+}
+
+.dropdown_menu_dddiv {
+	padding-top: 35px;
+	padding-left: 115px;
+	font-size: 17px;
+	text-decoration: none;
+	text-align: left;
+	color: #1f8a52;
+}
+
+/* 			CAROUSEL    */
+
+.vic_carousel {
+	width: 100%;
+	height: 500px;
+}
+
+.inner_carousel {
+	position: relative;
+	width: 100%;
+	height: 500px;
+}
+
+.container {
+	padding-left: 0px!important;
+	padding-right: 0px!important;
+}
+
+.container, .carousel, #myCarousel, .carousel-inner, .item {
+  	width: 100%!important;
+  	height: 500px;
+}
+
+.carousel-inner > .item > .slider_img, .carousel-inner > .item > a > img {
+	width: 100%!important;
+	margin: auto;
+}
+
+.slider_img {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	width: 100%!important;
+	height: 500px
+}
+
+.carousel-caption {
+	left: 200px!important;
+	bottom: 350px;
+	right: 0%!important;
+	text-align: left;
+}
+
+
+/*			WIDGET 		*/
+
+.widget_service {
+	width: 100%;
+	padding: 60px 0 40px 0;
+}
+
+.inner_widget_service {
+	position: relative;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 1100px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.widget_block {
+	padding: 20px 5px 15px 5px;
+	width: 32%;
+	margin: 4px;
+	background: #e7fff2;
+	border-radius: 50px;
+}
+
+.widget_wrap_div {
+	width: 100%;
+	position: relative;
+	height: 90.3px;
+}
+
+.widget_diamond {
+	left: 10px!important;
+	bottom: 8.2px!important;
+}
+
+.widget_diamond img {
+	width: 25px;
+	height: 25px;
+}
+
+.widget_wrap_line {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	width: 91.3%;
+	height: 48px;
+	font-size: 21px;
+	padding-left: 56px;
+	color: #1f8a52;
+	border-bottom: 2px solid #1f8a52;
+}
+
+.widget_block p, .widget_block a div {
+	margin: 15px 0 0 25px;
+}
+
+.widget_block p {
+	color: #1f8a52;
+}
+
+/*			NEWS  		*/
+
+.news {
+	width: 100%;
+	padding: 60px 0 40px 0;
+	background: #e7fff2;
+}
+
+.news_diamond_icon {
+	background-image: url(../images/icons/news.png);
+}
+
+.inner_news {
+	position: relative;
+	margin: 0 auto;
+	width: 1100px;
+	display: flex;
+	flex-wrap: wrap;
+	/*height: 920px;*/
+	overflow: auto;	
+}
+
+.news_block {
+	position: relative;
+	width: 32%;
+	margin: 5px;
+	height: 450px;
+	color: #126539e3;
+	border: 1px solid #126539e3;
+}
+
+.news_photo {
+	width: 100%;
+	height: 200px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.news_block > h4,.news_block > p  {
+	margin-left: 20px;
+	margin-right: 15px;
+}
+
+.news_time {
+	position: absolute;
+	left: 15px;
+	bottom: 15px;
+}
+
+.btn_news {
+	position: absolute;
+	right: 15px;
+	bottom: 15px;
+}
+
+/* 			DOCTORS 		*/
+
+.doctors {
+	width: 100%;
+	padding: 60px 0 40px 0;
+}
+
+.doctors_diamond_icon {
+	background-image: url(../images/icons/bjishkner1.png);
+}
+
+.inner_doctors {
+	position: relative;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 1100px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.doctors_block {
+	width: 24.4%;
+	margin: 3px;
+	padding: 3px;
+	word-wrap: break-word;
+}
+
+.doctors_block h4, .doctors_block p {
+	text-align: center;
+}
+
+.doctors_block > a > img {
+	width: 100%;
+	height: 200px;
+	border-radius: 10px;
+	border: 1px solid #1f8a52;
+}
+
+.doctors_block > a > img:focus {
+	outline: none;
+}
+
+.all_doctors_btn {
+	position: absolute;
+	right: 0;
+	top: -48px;
+	border: 1px solid #1f8a52;
+}
+
+
+/* 			FOOTER 			*/
+
+.footer {
+	position: relative;
+	width: 100%;
+	height: 150px;
+	background: #1f8a52;
+}
+
+.inner_footer {
+	position: relative;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 1100px;
+	height: 150px;
+}
+
+.address {
+	position: absolute;
+	left: 0;
+	top: 20px;
+}
+
+.address > p {
+	color: white;
+	font-size: 11.5px;
+}
+
+.icons {
+	position: absolute;
+	right: 0;
+	bottom: 55%;
+}
+
+.icons > a > img {
+	margin-right: 20px;
+	width: 32px;
+	height: 32px;
+}
+
+.disclamer {
+	position: absolute;
+	right: 68px;
+	bottom: 0;
+	color: white;
+}
+
+.copyright {
+	position: relative;
+	width: 100%;
+	background: #207348;
+	height: 40px;
+}
+
+.inner_copyright {
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 1100px;
+	height: 40px;
+}
+
+.first {
+	float: left;
+}
+
+.last {
+	float: right;
+	text-align: right;
+}
+
+.last a {
+	text-decoration: none;
+	color: white;
+}
+
+.inner_copyright div {
+	width: 300px;
+	line-height: 40px;
+	color: white;
+	margin: 0px!important;
+}
+
+/*			ABOUT US 		*/
+
+.about_us_diamond_icon {
+	background-image: url("../images/icons/mer masin1.png");
+}
+
+.content_about_us {
+	width: 100%;
+	padding-top: 10px;
+	padding-bottom: 80px;
+}
+
+.content_about_us div {
+	color: #1f8a52;
+}
+
+.inner_content_us {
+	position: relative;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 1100px;
+}
+
+.video {
+	display: flex;
+	justify-content: space-around;
+	width: 1100px;
+	height: 330px;
+	margin-top: 40px;
+}
+
+.video p {
+	display: inline-block;
+}
+
+.video div {
+	width: 400px;
+}
+
+.video div video {
+	height: 300px;
+	border: 1px solid #1f8a52;
+}
+
+/*			MEDICAL TOURISM		*/
+
+.medical_tourism {
+	width: 100%;
+	padding: 20px 0 60px 0;
+}
+
+.inner_tourism {
+	position: relative;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 1100px;
+}
+
+.tourism_diamond_icon {
+	background-image: url('../images/icons/turizm1.png');
+}
+
+.tourism_description {
+	position: relative;
+	width: 100%;
+	color: #1f8a52;
+	margin-bottom: 20px;
+}
+
+.tourism_video {
+	float: left;
+}
+
+.tourism_description_1 {
+	float: right;
+	width: 650px;
+}
+
+
+/*  		REVIEWS 			*/
+
+.review {
+	width: 100%;
+	padding: 20px 0 60px 0;
+	background: #e7fff2;
+}
+
+.inner_review {
+	position: relative;
+	right: 0;
+	left: 0;
+	margin: auto;
+	width: 1100px;
+}
+
+.rewiews_diamond_icon {
+	background-image: url("../images/icons/ardzaganq1.png");
+}
+
+.people_reviews {
+	width: 1100px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.reviews_content {
+	position: relative;
+	width: 46%;
+	margin: 20px;
+	color: #1f8a52;
+	padding: 10px;
+	border-radius: 40px;
+}
+
+.reviews_content_img {
+	float: left;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	width: 164px;
+	height: 164px;
+	border: 1px solid #126539e3;
+}
+
+.reviews_content_text {
+	padding-left: 25px;
+	float: right;
+	width: 320px;	
+	padding-bottom: 34px;
+}
+
+.reviews_content_text p {
+	text-align: left;
+}
+
+.reviews_content_text h4 {
+	margin-top: 0px!important;
+}
+
+.carousel-caption {
+	top: 0;
+	left: -52%!important;
+}
+
+.reviews_content_btn {
+	position: absolute;
+	left: 10px;
+	top: 184px;
+}
+
+/* 			FAQ 		*/
+
+.faq_block {
+	width: 100%;
+	padding-top: 10px;
+	padding-bottom: 80px;
+}
+
+.inner_faq_block {
+	position: relative;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 1100px;
+}
+
+.faq_diamond_icon {
+	background-image: url("../images/icons/faq1.png");
+}
+
+.choice_of_operation {
+	width: 35%!important;
+}
+
+/*	 		FAQ question		*/
+
+.question_div {
+	padding: 30px;
+}
+
+.question_p {
+	color: #126539e3;
+	font-size: 17px;
+	cursor: pointer;
+}
+
+.answer_div {
+	padding: 10px 0 10px 20px;
+	border: 1px solid #126539e3;
+	margin: 20px;
+	font-style: normal;
+}
+
+/* 			CONTACT			*/
+
+.contact {
+	width: 100%;
+	padding: 20px 0 60px 0;
+}
+
+.inner_contact {
+	position: relative;
+	right: 0;
+	left: 0;
+	margin: auto;
+	width: 1100px;
+}
+
+.contact_diamond_icon {
+	background-image: url("../images/icons/hetadarz kap1.png");
+}
+
+.contact_address {
+	width: 1100px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.contact_add {
+	width: 40%;
+	padding: 10px 0px 10px 20px;
+	color: #126539e3;
+}
+
+.contact_add h4 {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	color: #373e9b;
+	font-size: 17px;
+}
+
+
+.contact_add p {
+    font-style: normal;
+}
+
+.operations_content_div {
+	overflow: hidden;
+}
+
+/* 			CONTACT FORM 		*/
+
+#contact_form {
+	width: 500px;
+	text-align: left;
+	margin: 0 auto;
+}
+
+#contact_form h3 {
+	font-size: 21px;
+	color: #126539e3;
+} 
+
+.send_btn {
+	float: left;
+}
+
+.close_btn {
+	float: right;
+}
+
+.close_btn, .send_btn {
+	width: 35%;
+}
+
+
+/* 		DOCTORS PAGE 	*/
+
+.main_page_doctors {
+	width: 100%;
+	padding: 20px 0 60px 0;
+	background: #e7fff2;
+}
+
+.inner_page_doctors {
+	position: relative;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 1100px;
+}
+
+.our_team_doctors {
+	width: 1100px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.our_team {
+	margin: 3px;
+	width: 32.7%;
+	text-align: center;
+	color: #1f8a52;
+}
+
+.black_div img {
+	border-radius: 20px;
+	border: 1px solid #1f8a52;
+	width: 250px!important;
+	height: 200px!important;
+}
+
+.black_div {
+	position: relative;
+	margin: 0 auto;
+	border-radius: 20px;
+	width: 250px;
+	height: 200px;
+}
+
+.black_div_1 {
+	position: absolute;
+	top: 0;
+	border-radius: 20px;
+	background: rgba(171, 171, 171, 0);
+	width: 250px;
+	height: 200px;
+	cursor: pointer;
+}
+
+.inf_doctors {
+	background-image: url("../images/search.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 18px;
+	height: 18px;
+	margin: 35% auto;
+	cursor: pointer;
+}
+
+/* 			DISCLAIMER 			*/
+
+.disclaimer_block {
+	width: 100%;
+	padding: 20px 0 60px 0;
+}
+
+.inner_disclaimer {
+	position: relative;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 1100px;
+}
+
+.wrap_diamond_disclaimer {
+	padding: 7px 0 0 7px;
+}
+
+.disclaimer_diamond_icon {
+	background-image: url("../images/icons/Disclaimer1.png");
+	width: 25px;
+	background-size: contain;
+}
+
+/* 			OPERATIONS 			*/
+
+.operations {
+	width: 100%;
+	padding: 6px 0 20px 0;
+}
+
+.inner_operations {
+	position: relative;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 1100px;
+}
+
+.operations_wrap_diamond {
+	transform: rotate(0deg);
+	bottom: 0;
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	padding: 0 0 0 0;
+}
+
+
+.operations_content {
+	position: relative;
+	width: 1100px;
+}
+
+.operations_content_div {
+	margin-bottom: 40px;
+	color: #126539e3;
+}
+
+.operations_content_div img {
+	float: left;
+	margin-right: 30px;
+	margin-bottom: 20px;
+	border-radius: 10px;
+	border: 1px solid #1f8a52;
+}
+
+.operations_content a div {
+	position: absolute;
+	right: 0px; 
+	top: -55px;
+	border: 1px solid #1f8a52;
+}
+
+.operations_slider {
+	position: relative;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	width: 600px;
+}
+
+.news_main_page {
+	width: 100%;
+	padding: 20px 0 60px 0;
+}
+
+.inner_news_page {
+	position: relative;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 1100px;
+}
+
+.card {
+	overflow: hidden;
+}
+
+.card img {
+	float: right;
+	margin-left: 20px;
+	margin-bottom: 30px;
+	border-radius: 20px;
+	width: 450px;
+}
+
+.info_news {
+	position: relative;
+	width: 1100px;
+}
+
+/*.under  {
+	text-decoration: underline;
+}*/
+u {
+	text-decoration: underline;
+}
+
+.operations_content ul {
+	padding-left: 50px;
+}
+
+.microsurgery, .reconstructive {
+	display: flex;
+	flex-wrap: wrap;
+	width: 1100px;
+	margin-top: 30px;
+}
+
+.reconstructive {
+	justify-content: space-around;
+}
+
+.microsurgery img {
+	width: 33%;
+	height: 250px;
+	margin-right: 0px;
+}
+
+.reconstructive img {
+	width: 40%;
+	height: 250px;
+}
+
+.sinus {
+	position: relative;
+	display: flex;
+	justify-content: space-around;
+}
+
+.sinus img {
+	margin-right: 0px!important;
+	margin-top: 20px;
+	border-radius: 0px;
+}
+
+/* 			OPERATIONS ICON 		*/
+
+.oper_icon {
+	width: 45px;
+	height: 45px;
+	border-radius: 50%;
+	transform: rotate(0deg);
+}
+
+.operations_diamond_icon {
+	background-image: url('https://lh3.googleusercontent.com/-eCnPavzNJEA/WtUQwgc4_1I/AAAAAAAAGoc/HBa7BfsCX-sR4bL_MmINKdIbtapIz_GqACL0BGAYYCw/h2047/1nose%2Bvector.png');
+}
+
+.breast_diamond_icon {
+	background-image: url('https://lh3.googleusercontent.com/-jXCL0BoNd48/WtjOaADcjDI/AAAAAAAAG-Q/0ds3gD_1Eoww3MXZ3cY3zYQ-ak5dAynXACL0BGAYYCw/h1419/boobs%2Bdo%2Bposle.png');
+}
+
+.reduction_diamond_icon {
+	background-image: url('https://lh3.googleusercontent.com/-RAahSm9sQfg/WtjQklykdZI/AAAAAAAAG_o/GtkCykjuPEARkdJ37cPkHOA1_m2gSykugCL0BGAYYCw/h1440/boobs%2Bdzqum%2BNEW.png');
+}
+
+.abdominoplasty_diamond_icon {
+	background-image: url('https://lh3.googleusercontent.com/-XDMhkzy_j08/WtUQ_SbiI8I/AAAAAAAAGoc/VwhbLi-YBJMTfeY_uShU1RRohqA032ZZwCL0BGAYYCw/h2048/4abdominoplastika.png');
+}
+
+.liposuction_diamond_icon {
+	background-image: url('https://lh3.googleusercontent.com/-q9mBt7oM8BM/WtjRooOQZVI/AAAAAAAAHAY/nRqw21byq7gyRu9alkGneNxBuV6wyAzpwCL0BGAYYCw/h1419/5liposakcia.png');
+}
+
+.face_diamond_icon {
+	background-image: url('https://lh3.googleusercontent.com/-CEbPzTIbARU/WtjScLmHKCI/AAAAAAAAHA8/C0Ak1IC26XcACk5tyhifh9CoB2Rn0bsjQCL0BGAYYCw/h1419/demqi%2Bmashk11.png');
+}
+
+.ears_diamond_icon {
+	background-image: url('https://lh3.googleusercontent.com/-n_FuEE-vMeE/WtjM0ugoiuI/AAAAAAAAG9c/ZtAE-0kThqwe48huLJ8qN0NGPcUot-_-gCL0BGAYYCw/h1418/7akanjner.png');
+}
+
+.eyelid_diamond_icon {
+	background-image: url('https://lh3.googleusercontent.com/-yqDNUmUxA5I/WtjLCaYpoVI/AAAAAAAAG8I/LFZAmTcugzocm-U4FfzA1xsKG2MV_Ss_wCL0BGAYYCw/h1418/koper111.png');
+}
+
+.removal_diamond_icon {
+	background-image: url('https://lh3.googleusercontent.com/-WAMP8vRbLw8/WtURWDQssII/AAAAAAAAGoc/lOu4mrRh_hUAGwsKWNdxgw7So_I7tnk1ACL0BGAYYCw/h2048/9barorak1.png');
+}
+
+.vascular_diamond_icon {
+	background-image: url('https://lh3.googleusercontent.com/-KARCGttTnj8/WtURaDwvVCI/AAAAAAAAGoc/53jL6nKMnLgYWk7Wo7HMKfgKLV3vdeIrACL0BGAYYCw/h2048/10anotner.png');
+}
+
+.microsurgery_diamond_icon {
+	background-image: url('https://lh3.googleusercontent.com/-nFTcsGReWeQ/WtjH_Ux8QKI/AAAAAAAAG6c/1bAo9yRvT1AABU1c7-hNpd6iZJxxHBEpgCL0BGAYYCw/h2048/11mikrooperacia.png');
+}
+
+.recons_diamond_icon {
+	background-image: url('https://lh3.googleusercontent.com/-yozS0NyNVlQ/WtURiOds-3I/AAAAAAAAGoc/oqJzFp7Un7Y0omnYqQZUwcZ2N0rxjQVdgCL0BGAYYCw/h2048/12plastik%2Bev%2Bestetik.png');
+}
+
+.proctology_diamond_icon {
+	background-image: url('https://lh3.googleusercontent.com/-3-KEzpzt_3Q/WtjJzvGiYII/AAAAAAAAG7w/IuR338uCUf89XJNSXENMme73gwbpne4mQCL0BGAYYCw/h2048/13proktalogia.png');
+}
+
+.sinus_diamond_icon {
+	background-image: url('https://lh3.googleusercontent.com/-IYQ6hE4l6X8/Wtxg1QPxtuI/AAAAAAAAHE0/WKkzhx_-mR44p4GqM_sEqb8wev9gqxTsACL0BGAYYCw/h1418/xoroch.png');
+}
+
+/*			GALLERY			 */
+
+.gallery_block {
+	width: 100%;
+	padding: 20px 0 20px 0;
+}
+
+.inner_gallery {
+	position: relative;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 1100px;
+}
+
+.image_gallery {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	width: 100%;
+}
+
+.all_images {
+	width: 250px;
+	border: 2px solid #1f8a52;
+	border-radius: 20px;
+	height: 200px;
+	margin: 5px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+
+.about_us_gallery {
+	position: relative;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 1100px;
+}
+
+.w3-content, .mySlides {
+	width: 900px;
+	height: 500px;
+}
+
+.gallery_diamond_icon {
+	background-image: url('../images/icons/gallery.png');
+}
+
+.gallery_about_us {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.gallery_about_us img {
+	width: 250px;
+	margin-left: 20px;
+	height: 250px;
+	border: 2px solid #1f8a52;
+	border-radius: 20px;
+}
+
+.all_photo_gallery {
+	border: 1px solid #1f8a52;
+	position: absolute;
+	right: 0;
+	top: 40px;
+}
+
+.under {
+	margin-bottom: 20px;
+}
+
+/*			PRIVACY POLICY			*/
+
+.privacy_policy_block {
+	position: relative;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 1100px;
+	color: #126539e3;
+}
+
+.policy_diamond_icon {
+	background-image: url("../images/icons/lock.png");
+}
+
+.privacy_policy_block p {
+	margin: 30px 0 30px 30px;
+}
+
+.lightbox:focus, .lightbox:active {
+	outline: none;
+}
+.invalid {
+	display: none!important;
+	height: auto!important;
+}
+
+.contact_btn{
+	border-radius: 0px!important;
+	width: 100%;
+}
+
+.form_bttn {
+	width: 103px!important;
+	border: 1px solid #1f8a52;
+    position: absolute;
+    right: 0;
+    top: 40px;
+}
+
+/*//////////////////////////////////////////////////*/
+
+.topnav {
+	  overflow: hidden;
+	  background-color: #efefef;
+	  float: right;
+	  width: 900px;
+	}
+
+	.topnav a {
+	  float: right;
+	  display: block;
+	  color: #f2f2f2;
+	  text-align: center;
+	  padding: 14px 16px;
+	  text-decoration: none;
+	  font-size: 17px;
+	}
+
+	.active {
+	  background-color: #4CAF50;
+	  color: white;
+	}
+
+	.topnav .icon {
+	  display: none;
+	}
+
+	.dropdown {
+	    float: right;
+	    overflow: hidden;
+	    position: static;
+	    background-color: #1f8a52;
+    	color: white;
+	}
+
+	.dropdown .dropbtn {
+	    font-size: 17px;    
+	    border: none;
+	    outline: none;
+	    color: white;
+	    padding: 14px 16px;
+	    background-color: inherit;
+	    font-family: inherit;
+	    margin: 0;
+	}
+
+	.dropdown-content {
+	    display: none;
+	    position: absolute;
+	    left: 31px;
+	    top: 100px;
+	    background-color: #efefef;
+	    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
+	    z-index: 1;
+	}
+
+	.dropdown-content a {
+	    float: none;
+	    color: black;
+	    padding: 12px 16px;
+	    text-decoration: none;
+	    display: block;
+	    text-align: left;
+	}
+
+	.topnav a:hover, .dropdown .dropbtn {
+	  background-color: #1f8a52;
+	  color: white;
+	}
+
+	.dropdown-content a:hover {
+	    background-color: #efefef;
+	}
+
+
+	@media (min-width: 320px) and (max-width: 1099px) {
+	  .topnav a, .dropdown .dropbtn {
+	    display: none;
+	  }
+	  .topnav a.icon {
+	    float: right;
+	    display: block;
+		font-size: 27px!important;
+	  }
+	  .topnav {
+	  	width: 60%;
+	  	text-align: center;
+	  }
+	  .icon {
+		background-color: #1f8a52;
+   		color: white;
+	  }
+	  .menu_text_a, .dropdown  {
+	  	border: 1px solid #1f8a52;
+	  }
+	  .menu_text_a img, .menu_text_a p {
+	  	float: left;
+	  }
+	  .dis_flex {
+	  	top: 0;
+	  	left: 0;
+	  }
+	  .dropdown_menu_div {
+	  	width: 100%;
+	  }
+	  .dropdown_menu_img {
+	  	width: 32px;
+	  	height: 32px;
+	  }
+	  .dropdown_menu_dddiv {
+	  	font-size: 14px;
+	  	padding-top: 5px;
+	  	padding-left: 42px;
+	  }
+	  .logo {
+	  	left: 0px;
+	  }
+	}
+
+	@media (min-width: 320px) and (max-width: 1099px) {
+	  .topnav.responsive {position: absolute!important;right: 0;}
+	  .topnav.responsive .icon {
+	    position: absolute;
+	    right: 0;
+	    top: 0;
+	  }
+	  .topnav.responsive a {
+	    float: none;
+	    display: block;
+	    text-align: left;
+	  }
+	  .topnav.responsive .dropdown {float: none;}
+	  .topnav.responsive .dropdown-content {position: relative;}
+	  .topnav.responsive .dropdown .dropbtn {
+	    display: block;
+	    width: 100%;
+	    text-align: left;
+	  }
+	}
+
+/*////////////////////////////////////////////*/
+
+@media (max-width: 1150px){
+	
+	.inner_operations,
+	.inner_content_us,
+	.lang_block,
+	.logo_and_menu,
+	.inner_widget_service,
+	.wrap_div,
+	.inner_news,
+	.inner_doctors,
+	.inner_footer,
+	.inner_copyright,
+	.inner_page_doctors,
+	.inner_review,
+	.inner_faq_block,
+	.inner_gallery,
+	.inner_disclaimer,
+	.inner_contact,
+	.contact_address,
+	.inner_tourism,
+	.inner_news_page,
+	.inner_gallery,
+	.inner_tourism
+	{
+		width: 1000px;
+	}
+
+	.inner_gallery .wrap_div,
+	.inner_disclaimer .wrap_div, 
+	.inner_contact .wrap_div,
+	.inner_tourism .wrap_div,
+	.inner_news_page .wrap_div,
+	.inner_page_doctors .wrap_div,
+	.inner_tourism .wrap_div
+	{
+		width: 100%;
+	}
+	
+	#myTopnav > li:not(.invalid) {
+		display: none;
+	}
+	.invalid {
+		display: block!important;
+		height: auto!important;
+	}
+
+	.topnav.responsive {
+		position: relative;
+	}
+	.topnav.responsive .menu_responsive_icon {
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+
+	.topnav.responsive li {
+		float: none;
+		display: block;
+		text-align: left;
+	}
+
+	#our_services {
+		width: 541px!important;
+	}.content, .video, .gallery_about_us{
+		width: 900px;
+		margin: 0 auto;
+	}.video p {
+		margin-top: 20px;
+	}.about_us_gallery {
+		width: 1000px;
+	}.about_us_gallery img {
+		width: 200px;
+	} 
+
+	.microsurgery, .reconstructive {
+		width: 90%;
+	}
+	.our_team_doctors, .privacy_policy_block{
+		width: 100%;
+	}
+
+}
+
+@media (min-width: 1030px) and (max-width: 1149px){
+
+	.lang_block,
+	.inner_widget_service,
+	.wrap_div,
+	.inner_news,
+	.inner_doctors,
+	.inner_footer,
+	.inner_copyright,
+	.our_team_doctors,
+	.inner_page_doctors,
+	.inner_review,
+	.inner_faq_block,
+	.inner_gallery,
+	.inner_disclaimer,
+	.inner_contact,
+	.contact_address,
+	.inner_tourism,
+	.inner_tourism .wrap_div,
+	.inner_news_page,
+	.inner_gallery,
+	.inner_tourism
+	{
+		width: 90%;
+	}
+	
+	.inner_gallery .wrap_div,
+	.inner_disclaimer .wrap_div,
+	.inner_contact .wrap_div,
+	.inner_news_page .wrap_div,
+	.inner_page_doctors .wrap_div,
+	.inner_tourism .wrap_div
+	{
+		width: 100%;
+	}
+
+	.header_tel {
+		width: 378px;
+		margin-left: 0px;
+	}
+
+	#myTopnav > li:not(.invalid) {
+		display: none;
+	}
+	.invalid {
+		display: block!important;
+		height: auto!important;
+	}
+
+	.choice_of_operation{
+		margin-left: 50px;
+	}
+
+	.our_team_doctors .our_team {
+		width: 31.7%;
+	}
+	
+	.operations_content, .our_team_doctors{
+		width: 100%;
+	} .inner_operations {
+		width: 90%;
+	}
+
+	.people_reviews {
+		width: 100%;
+		flex-direction: column;
+	}.reviews_content {
+		width: 100%;
+	}.reviews_content_text {
+		width: 80%;
+	}
+
+	.doctors_block {
+		width: 30%;
+	}
+	
+	.microsurgery, .reconstructive, .privacy_policy_block {
+		width: 100%;
+	}
+	.logo_and_menu {
+		width: 90%;
+	}
+	.tourism_description_1 {
+		float: none;
+		width: 100%;
+	}
+	.tourism_video {
+		margin-right: 20px;
+	}
+
+}
+
+@media (min-width: 766px) and (max-width: 1029px) {
+
+	
+	.lang_block,
+	.inner_widget_service,
+	.wrap_div,
+	.inner_news,
+	.inner_doctors,
+	.inner_footer,
+	.inner_copyright,
+	.our_team_doctors,
+	.inner_page_doctors,
+	.inner_review,
+	.inner_faq_block,
+	.inner_gallery,
+	.inner_disclaimer,
+	.inner_contact,
+	.contact_address,
+	.inner_tourism,
+	.inner_tourism .wrap_div,
+	.inner_news_page,
+	.inner_gallery,
+	.inner_tourism
+	{
+		width: 80%;
+	}
+	
+	.inner_gallery .wrap_div,
+	.inner_disclaimer .wrap_div, 
+	.inner_contact .wrap_div,
+	.inner_content_us .wrap_div,
+	.inner_news_page .wrap_div,
+	.inner_page_doctors .wrap_div,
+	.inner_tourism .wrap_div
+	{
+		width: 100%;
+	}
+
+	.header_lang {
+		float: left;
+	}
+	.tourism_description_1 {
+		float: none;
+		width: 100%;
+	}
+	.menu {
+		width: 80px;
+	}
+	.tourism_video {
+		margin-right: 20px;
+	}
+	.inner_header {
+		height: 80px;
+	}
+	.header_tel {
+		height: 40px;
+	}
+	.sinus {
+		display: block;
+	}
+	.sinus video {
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	.sinus img {
+		width: 100%;
+	}
+
+	.choice_of_operation{
+		margin-left: 75px;
+	}
+
+	.logo_and_menu {
+		width: 90%;
+	}
+
+	.people_reviews {
+		width: 100%;
+		flex-direction: column;
+	}.reviews_content {
+		width: 100%;
+	}.reviews_content_text {
+		width: 72%;
+	}
+
+	.our_team_doctors .our_team {
+		width: 45.7%;
+	}
+
+	/*#removal_id {
+		height: 75px;
+	}*/
+	#removal_btn {
+		top: -38px!important;
+	}
+
+	.microsurgery, 
+	.reconstructive, 
+	.operations_content, 
+	.our_team_doctors, 
+	.people_reviews, 
+	.privacy_policy_block{
+		width: 100%;
+	} .inner_operations {
+		width: 80%;
+	}
+
+	.news_block {
+		width: 48%;
+	}
+
+	.doctors_block {
+		width: 250px;
+		margin: auto;
+	}
+
+	.widget_block {
+		width: 100%;
+	}
+
+	.inner_widget_service {
+		flex-direction: column;
+	}
+
+
+	.inner_content_us{
+		width: 90%;
+	} 
+
+	
+	#our_services_video{
+		float: right;
+	}
+	#our_services_video {
+		display: block;
+		float: left;
+	}.content{
+		width: 100%;
+	}
+	#our_services {
+		position: absolute;
+		right: 0;
+		top: 0;
+		width: 54%!important;
+	}.video, .gallery_about_us{
+		width: 100%;
+		margin: 0 auto;
+	}.video p {
+		width: 300px;
+		margin-top: 20px;
+	}.about_foundation video {
+		float: right!important;
+	}.gallery_about_us img {
+		width: 80%!important;
+	}.gallery_about_us a{
+		width: 33%;
+		margin-bottom: 20px;
+	}
+	.about_us_gallery {
+		width: 100%;
+	}.about_us_gallery img {
+		width: 85%;
+	}.video video {
+		width: 300px;
+		height: 225px!important;
+	}
+	
+	.operations_content a div{
+		top: -38px;
+	}
+	#removal_btn {
+		top: -38px!important;
+	}
+
+	.header {
+		margin-bottom: 20px;
+	}
+}
+
+@media (min-width: 631px) and (max-width: 765px){
+
+	.lang_block,
+	.inner_widget_service,
+	.wrap_div,
+	.inner_news,
+	.inner_footer,
+	.inner_doctors,
+	.inner_copyright,
+	.inner_page_doctors,
+	.inner_review,
+	.inner_faq_block,
+	.inner_gallery,
+	.inner_disclaimer,
+	.inner_contact,
+	.contact_address,
+	.inner_tourism,
+	.inner_content_us,
+	.inner_tourism .wrap_div,
+	.inner_news_page,
+	.inner_gallery,
+	.inner_tourism
+	{
+		width: 70%;
+	}
+	
+	.inner_gallery .wrap_div,
+	.inner_disclaimer .wrap_div, 
+	.inner_contact .wrap_div,
+	.inner_content_us .wrap_div,
+	.inner_news_page .wrap_div,
+	.inner_page_doctors .wrap_div,
+	.inner_tourism .wrap_div
+	{
+		width: 100%;
+	}
+
+	.contact_address{
+		display: block;
+	}
+
+	.carousel-caption{
+		right: -25%!important;
+	}
+	.contact_add {
+		width: 100%;
+		display: block;
+	}
+
+	.header {
+		margin-bottom: 50px;
+	}
+	.sinus img {
+		width: 100%;
+	}
+	.header_lang{
+		float: left;
+	}
+	#our_services_video{
+		float: right;
+	}
+	#our_services_video {
+		display: block;
+		float: left;
+	}.content{
+		width: 100%;
+	}
+	#our_services {
+		position: absolute;
+		right: 0;
+		top: 0;
+		width: 54%!important;
+	}.video, .gallery_about_us{
+		width: 100%;
+		margin: 0 auto;
+	}.video p {
+		width: 300px;
+		margin-top: 20px;
+	}.about_foundation video {
+		float: right!important;
+	}.about_us_gallery {
+		width: 100%;
+	}.about_us_gallery img {
+		width: 85%;
+	}.video video {
+		width: 100%;
+	}.video  {
+		display: flex;
+		flex-direction: column;
+		height: auto;
+	}.about_foundation{
+		height: auto!important;
+	}.gallery_about_us {
+		flex-direction: column;
+	}
+	.gallery_about_us img {
+		width: 80%!important;
+	}.gallery_about_us a{
+		width: 60%;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 20px;
+	}
+
+
+
+	.tourism_description_1 {
+		float: left;
+   		width: 100%;
+	}
+	.tourism_video {
+		margin-right: 20px;
+	}
+
+
+	.container {
+		height: 100vh;
+	}
+	.inner_header {
+		height: 80px;
+	}
+	.header_tel {
+		height: 40px;
+	}
+
+	.lang_block {
+		width: 550px;
+	}
+	.search, .search input {
+		width: 100%;
+	}
+
+	#contact_form {
+		width: 100%;
+	}
+
+	.choice_of_operation{
+		margin-left: 70px;
+		width: 70%!important;
+	}
+
+	.sinus {
+		display: block!important;
+	}.sinus video {
+		display: block;
+		width: 100%;
+		margin-bottom: 20px;	
+	}
+
+	.inner_faq_block .wrap_div {
+		width: 100%;
+	}
+
+	.operations_content a div{
+		top: -38px;
+	}
+
+	.people_reviews {
+		width: 100%;
+		flex-direction: column;
+	}.reviews_content {
+		width: 100%;
+	}.reviews_content_text {
+		width: 60%;
+	}
+
+	/*#removal_id {
+		height: 75px;
+	}*/
+	#removal_btn {
+		top: -38px!important;
+	}
+
+	.our_team_doctors .our_team {
+		width: 60%;
+		margin: 0 auto;
+	}
+
+	.microsurgery img {
+		width: 80%;
+		margin: 0 auto;
+	}
+	
+	.our_team_doctors {
+	   flex-direction: column;
+	}
+	
+	.operations_content_div img,  {
+		width: 100%;	
+	}
+
+	.reconstructive img {
+		margin-right: 0px;
+		margin-left: 10px;
+		width: 47%;
+	}
+
+	.inner_news {
+		width: 360px;
+	}
+
+	.operations_content{
+		width: 100%;
+	} .inner_operations {
+		width: 70%;
+	}.operations_content a div{
+		top: -38px;
+	}.operations_slider {
+		width: 500px!important;
+		height: 500px;
+	}
+
+
+	.doctors_block {
+		width: 48%;
+		margin-left: 0.7%;
+	}
+
+	.widget_block, .news_block {
+		width: 100%;
+	}
+
+
+
+	.footer {
+		height: 320px;
+	}.icons, .disclamer {
+		position: absolute;
+		left: 0;
+	}.icons img {
+		margin-bottom: 9px;
+	}.icons {
+		bottom: -45px;
+	}.disclamer {
+		bottom: -110px;
+	}.copyright {
+		position: absolute;
+		bottom: 0;
+		height: 60px;
+	}.inner_copyright{
+		height: 60px;
+	}.last {
+		float: left;
+		text-align: left;
+	}.first, .last {
+		height: 30px;
+	}
+
+	.operations_content_div img {
+		width: 100%;	
+	}
+
+	.menu {
+		width: 80px;
+	}
+	.logo_and_menu {
+		width: 90%;
+	}
+
+}
+
+@media (min-width: 480px) and (max-width: 630px){
+
+	.lang_block,
+	.inner_widget_service,
+	.wrap_div,
+	.inner_news,
+	.inner_doctors,
+	.inner_footer,
+	.inner_copyright,
+	.inner_page_doctors,
+	.inner_review,
+	.inner_gallery,
+	.inner_disclaimer,
+	.inner_contact,
+	.contact_address,
+	.inner_tourism,
+	.inner_content_us,
+	.inner_tourism .wrap_div,
+	.inner_news_page,
+	.inner_gallery,
+	.inner_tourism
+	{
+		width: 60%;
+	}
+	
+	.inner_gallery .wrap_div,
+	.inner_disclaimer .wrap_div, 
+	.inner_contact .wrap_div,
+	.inner_content_us .wrap_div,
+	.inner_news_page .wrap_div,
+	.inner_page_doctors .wrap_div,
+	.inner_tourism .wrap_div
+	{
+		width: 100%;
+	}
+
+	.container {
+		height: 100vh;
+	}
+	.tourism_description_1 {
+		float: left;
+   		width: 100%;
+	}
+	.carousel-caption {
+		right: -33%!important;
+	}
+	.sinus  {
+		display: block;
+	}.sinus video {
+		display: block;
+		width: 100%;
+		margin-bottom: 20px;	
+	}.sinus img {
+		width: 100%;
+	}
+	.logo_and_menu {
+		width: 90%;
+	}
+	
+	.lang_block {
+		text-align: center;
+		width: 480px;
+		height: 80px;
+	}
+	.lang_block ul:first-child {
+		margin-right: 20px;
+	}
+	.search, .search input {
+		width: 100%;
+	}
+
+	.header {
+		margin-bottom: 50px;
+	}s
+	#more_news_img {
+		width: 310px;
+		float: none;
+	}
+
+	#our_services_video{
+		float: right;
+	}
+	#our_services_video {
+		display: block;
+		/*float: left;*/
+		margin-right: 25px;
+		margin-bottom: 10px;
+		width: 300px!important;
+	}.content{
+		width: 100%;
+	}
+	#our_services {
+		position: absolute;
+		right: 0;
+		top: 0;
+		width: 54%!important;
+	}.video, .gallery_about_us{
+		width: 100%;
+		margin: 0 auto;
+	}.video p {
+		width: 300px;
+		margin-top: 20px;
+	}.about_foundation video {
+		margin: auto;
+		width: 100%;
+		height: 231px;
+	}.gallery_about_us{
+		display: flex;
+		flex-direction: column;
+	}
+	.about_us_gallery {
+		width: 100%;
+	}.about_us_gallery img {
+		width: 100%;
+	}.video video {
+		width: 70%;
+		height: 211px!important;
+	}.video  {
+		display: flex;
+		flex-direction: column;
+		height: auto;
+	}.about_foundation{
+		height: auto!important;
+	}.gallery_about_us {
+		flex-direction: column;
+	}
+	.gallery_about_us img {
+		width: 80%!important;
+	}.gallery_about_us a{
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 20px;
+	}
+
+
+	.tourism_video {
+		margin-bottom: 20px;
+	}
+
+
+	.contact_address{
+		display: block;
+	}
+
+	.contact_add {
+		width: 100%;
+		display: block;
+	}
+
+
+
+
+	.header_tel{
+		margin-left: 40px;
+	}
+	.header_lang {
+		float: left;
+		width: 480px;
+	}
+	#contact_form {
+		width: 100%;
+	}
+
+	.inner_faq_block{
+		width: 80%;
+	}
+	.inner_faq_block .wrap_div {
+		width: 100%;
+	}
+	.inner_header {
+		height: 80px;
+	}
+	.header_tel, .header_lang {
+		height: 40px;
+	}
+
+	.choice_of_operation{
+		width: 100%!important;
+	}
+
+	.people_reviews {
+		width: 100%;
+		flex-direction: column;
+	}.reviews_content {
+		width: 100%;
+		margin: 0px;
+	}.reviews_content_text {
+		width: 62%;
+	}.reviews_content_img{
+		width: 85px;
+		height: 85px;
+	}.reviews_content_btn{
+		top: 100px;
+	}
+
+	.operations_content_div img, .privacy_policy_block {
+		width: 100%;	
+	}
+	.our_team_doctors {
+	   flex-direction: column;
+	}
+	.our_team_doctors .our_team {
+		width: 100%;
+	}
+
+	.operations_content{
+		width: 100%;
+	} .inner_operations {
+		width: 60%;
+	}.operations_content a div{
+		top: -38px;
+	}.operations_slider {
+		position: relative;
+		height: 500px;
+		left: -80px;
+		width: 500px!important;
+	}
+
+	.microsurgery img, .reconstructive img {
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	.reconstructive img {
+	margin-bottom: 5px;
+	}
+
+	/*.wrap_div {
+		width: 100%;	
+	}*/
+	
+	/*#removal_id {
+		height: 125px;
+	}
+	#eyelid_id, #face_id, #liposuction_id, #abdominoplasty_id{
+		height: 43px;
+	}
+	#breast_id {
+		height: 61px;
+	}*/
+
+	.doctors_block {
+		width: 100%;
+		margin-left: 12%;
+		margin-right: 12%;
+	}
+
+	.widget_block, .news_block {
+		width: 100%;
+	}
+
+
+	.footer {
+		height: 350px;
+	}.icons, .disclamer {
+		position: absolute;
+		left: 0;
+	}.icons img {
+		margin-bottom: 9px;
+	}.icons {
+		bottom: -60px;
+	}.disclamer {
+		bottom: -130px;
+	}.copyright {
+		position: absolute;
+		bottom: 0;
+		height: 60px;
+	}.inner_copyright{
+		height: 60px;
+	}.last {
+		float: left;
+		text-align: left;
+	}.first,.last {
+		height: 30px;
+	}
+
+	.menu {
+		width: 80px;
+	}
+
+}
