@@ -1,0 +1,30 @@
+/* 		TABLE 		*/
+
+.reqBlock {
+	width: 55px;
+	height: 37px;
+	position: relative;
+}
+
+.count_friend {
+	position: absolute;
+	top: 8px;
+	left: 70%;
+	font-size: 13px;
+	text-align: center;
+	color: black;
+	width: 18px;
+	height: 18px;
+	background: red;
+	border-radius: 30%;
+}
+u {
+	text-decoration: underline;
+}
+
+@media (min-width: 601px) and (max-width: 900px){
+	.count_friend {	left: 50%; }
+}
+@media (min-width: 480px) and (max-width: 600px){
+	.count_friend { left: 43%; }
+}
